@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#53d6fd</color> /*vrch - berbyt.cz*/
+    <color name="colorTextFont">#000</color> /*farba textu*/
+    <color name="colorPrimaryDark">#000</color> /*uplne hore pri case*/
+    <color name="colorAccent">#53D6FD</color> /*kurziva*/
+    <color name="colorBtn">#FFFF</color>
+    <color name="colorForm">#DEDEDE</color>
+    <color name="bottomNav">#FF7E6B</color>
+</resources>

@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".activity.BaseActivity">
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/bordersearch">
+
+            <ProgressBar
+                    android:id="@+id/mProgressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:indeterminate="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    tools:ignore="MissingConstraints"
+                    android:visibility="invisible"
+                    android:text="Vyhledávam Váš požadavek..."
+                    />
+
+            <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/locality"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/locality"
+                    android:layout_width="228dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_centerHorizontal="false"
+                    android:drawableRight="@drawable/ic_action_localita"
+                    android:onClick="onClickLocality"
+                    android:text="Vybrat lokalitu"
+                    android:textSize="18dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/type"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                <CheckBox
+                        android:id="@+id/gar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Garsonka" />
+
+                <CheckBox
+                        android:id="@+id/onekk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="1+kk" />
+
+                <CheckBox
+                        android:id="@+id/oneone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="1+1" />
+
+                <CheckBox
+                        android:id="@+id/twokk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="90dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="2+kk" />
+
+                <CheckBox
+                        android:id="@+id/twoone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="2+1" />
+
+                <CheckBox
+                        android:id="@+id/threekk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="3+kk" />
+
+                <CheckBox
+                        android:id="@+id/threeone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="3+1" />
+
+                <CheckBox
+                        android:id="@+id/fourkk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="90dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="4+kk" />
+
+                <CheckBox
+                        android:id="@+id/fourone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="4+1" />
+
+                <CheckBox
+                        android:id="@+id/fiveandmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="5 a více" />
+                <!--
+                            <CheckBox
+                                    android:id="@+id/fiveone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="270dp"
+                                    android:layout_marginTop="25dp"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="5+1" />
+
+                            <CheckBox
+                                    android:id="@+id/sixkk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="270dp"
+                                    android:layout_marginTop="50dp"
+                                    android:onClick="onCheckboxClicked"
+                                    android:text="6 a více" /> -->
+
+                <CheckBox
+                        android:id="@+id/atypic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Atypický" />
+
+                <CheckBox
+                        android:id="@+id/house"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="90dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Dům" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/price"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/priceFrom"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="od"
+                    android:inputType="number" />
+
+            <EditText
+                    android:id="@+id/priceTo"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="do"
+                    android:inputType="number" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/range"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_alignParentBottom="true">
+
+                <TextView
+                        android:id="@+id/textMin1"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/textMax1"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="190dp"
+                        android:layout_marginTop="20dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/rangeSeekbar1"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:bar_color="#53d6fd" app:bar_highlight_color="#DEDEDE"
+                    app:left_thumb_color="#3F3A3A"
+                    app:max_value="150"
+                    app:min_value="0"
+                    app:right_thumb_color="#3F3A3A" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/filter"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp">
+
+                <RadioGroup
+                        android:id="@+id/radioFilter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checkedButton="@+id/radioPrice">
+
+                    <RadioButton
+                            android:id="@+id/radioPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filterPrice" />
+
+                    <RadioButton
+                            android:id="@+id/radioDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/filterDate" />
+                </RadioGroup>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/furnished"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                <CheckBox
+                        android:id="@+id/full"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Úplně" />
+
+                <CheckBox
+                        android:id="@+id/medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Částečně" />
+
+                <CheckBox
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Vůbec" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/somethingMore"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                <CheckBox
+                        android:id="@+id/balcony"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Balkón" />
+
+                <CheckBox
+                        android:id="@+id/terase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Terasa" />
+
+                <CheckBox
+                        android:id="@+id/loggia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Lodžie" />
+
+                <CheckBox
+                        android:id="@+id/cellar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="90dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Sklep" />
+
+                <CheckBox
+                        android:id="@+id/parking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Parkování" />
+
+                <CheckBox
+                        android:id="@+id/garage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Garáž" />
+
+                <CheckBox
+                        android:id="@+id/lift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Výtah" />
+
+                <CheckBox
+                        android:id="@+id/wheelchairAccessible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:layout_marginTop="90dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Bezbariérový" />
+
+                <CheckBox
+                        android:id="@+id/washingMachine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Pračka" />
+
+                <CheckBox
+                        android:id="@+id/dishwasher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="30dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Myčka" />
+
+                <CheckBox
+                        android:id="@+id/fridge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="60dp"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Lednice" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/bordersearch">
+
+            <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/oldFeed"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="30dp">
+
+                <RadioGroup
+                        android:id="@+id/radioFeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checkedButton="@+id/radioAll">
+
+                    <RadioButton
+                            android:id="@+id/radioAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/all" />
+
+                    <RadioButton
+                            android:id="@+id/radioDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/day" />
+
+                    <RadioButton
+                            android:id="@+id/radioSevenDays"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sevenDays" />
+
+                    <RadioButton
+                            android:id="@+id/radioMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/month" />
+                </RadioGroup>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:background="@drawable/bordersearch">
+
+            <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="312dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/search"
+                    android:textAllCaps="false" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

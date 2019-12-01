@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "955492507449",
+    "firebase_url": "https://berbyt-420fa.firebaseio.com",
+    "project_id": "berbyt-420fa",
+    "storage_bucket": "berbyt-420fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955492507449:android:a0ad997a6dcde783",
+        "android_client_info": {
+          "package_name": "com.teamtreehouse.berbyt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955492507449-5qvk68332ecviibul9vb1tqmf00fbp6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamtreehouse.berbyt",
+            "certificate_hash": "942a9c6edd3bd0a90f9921dbfa451c7bc4d124d8"
+          }
+        },
+        {
+          "client_id": "955492507449-tj23nnma5ls958o6cd429ekpit0h2iam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG_IdoVd7qQT6y6BcSD2SIFBjmT54kqW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955492507449-tj23nnma5ls958o6cd429ekpit0h2iam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:showIn="navigation_view">
+
+    <group
+            android:id="@+id/group_visitor"
+            android:checkableBehavior="single"
+            android:visible="false">
+        <item
+                android:id="@+id/nav_log_in"
+                android:icon="@drawable/ic_action_log_in"
+                android:title="@string/logIn" />
+        <item
+                android:id="@+id/nav_reg"
+                android:icon="@drawable/ic_action_create_user"
+                android:title="@string/action_register" />
+    </group>
+
+    <group
+            android:id="@+id/group_user"
+            android:checkableBehavior="single"
+            android:visible="false">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_action_name"
+                android:title="@string/user" />
+
+        <item
+                android:id="@+id/nav_star"
+                android:icon="@drawable/ic_action_like"
+                android:title="@string/like" />
+
+        <item
+                android:id="@+id/nav_search"
+                android:icon="@drawable/ic_action_search"
+                android:title="@string/search" android:visible="false"/>
+
+    </group>
+
+    <item android:title="@string/moreover">
+        <menu>
+            <item
+                    android:id="@+id/nav_log_out"
+                    android:icon="@drawable/ic_action_logout"
+                    android:title="@string/logout"
+                    android:visible="false" />
+            <item
+                    android:id="@+id/nav_contact"
+                    android:icon="@drawable/ic_action_contact"
+                    android:title="@string/contact" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.BaseActivity">
+
+
+    <EditText
+            android:id="@+id/email"
+            android:layout_width="310dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bordershape"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/ic_action_email"
+
+            android:hint="@string/textEmail"
+            android:inputType="textEmailAddress"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="312dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:layout_height="45dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bordershape"
+            android:paddingLeft="10dp"
+
+            android:hint="@string/textPassword"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+            android:text="@string/action_signIn"
+            android:id="@+id/login"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size"
+            android:layout_width="312dp"
+            android:layout_height="35dp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonshape"/>
+    <TextView
+            android:id="@+id/text_forg"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/forgot"
+            android:textColor="@color/com_facebook_blue"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+</LinearLayout>

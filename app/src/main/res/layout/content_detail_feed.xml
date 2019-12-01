@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/feed_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bordersearch"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
+
+        <ImageView
+                android:id="@+id/d_prev"
+                android:layout_width="59dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="-63dp"
+                android:layout_toLeftOf="@+id/d_img_pic"
+                android:src="@drawable/ic_action_prev" />
+
+        <ImageView
+                android:id="@+id/d_img_pic"
+                android:layout_width="match_parent"
+                android:layout_height="208dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+                android:id="@+id/d_next"
+                android:layout_width="59dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="-63dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/d_img_pic"
+                android:src="@drawable/ic_action_next" />
+
+        <ImageView
+                android:id="@+id/d_img_logo"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_img_pic"
+                android:src="@mipmap/ic_launcher_sreality_logo" />
+
+        <TextView
+                android:id="@+id/d_txt_name"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d_img_pic"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/d_img_logo"
+                android:text="name"
+                android:textColor="#313131"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/d_txt_locality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_txt_name"
+                android:padding="10dp"
+                android:text="locality"
+                android:textColor="#808080"
+                android:textSize="18sp" />
+
+        <TextView
+                android:id="@+id/d_txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_below="@+id/d_txt_locality"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:text="price"
+                android:textColor="#313131"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        <ImageView
+                android:id="@+id/d_imageUnlike1"
+                android:layout_width="52dp"
+                android:layout_height="42dp"
+                android:layout_below="@+id/d_txt_locality"
+                android:layout_marginLeft="122dp"
+                android:layout_marginTop="1dp"
+                android:layout_toRightOf="@+id/d_txt_price"
+                android:src="@drawable/ic_action_unlike" />
+
+        <TextView
+                android:id="@+id/d_txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/d_txt_price"
+                android:padding="10dp"
+                android:text="description"
+                android:textColor="#313131"
+                android:textSize="15sp" />
+
+        <RelativeLayout
+                android:id="@+id/relTable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/d_txt_desc">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tableForSR"
+                    android:background="@drawable/bordersearch"
+                    android:padding="10dp"
+                    android:stretchColumns="2"
+                    android:visibility="gone"
+                    tools:context=".activity.DetailFeedActivity">
+
+            </TableLayout>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tableForUD"
+                android:background="@drawable/bordersearch"
+                android:padding="10dp"
+                android:stretchColumns="2"
+                tools:context=".activity.DetailFeedActivity">
+
+            <TableRow
+                    android:id="@+id/tbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Údaje k bytu:"
+                        android:textColor="#313131"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_column="2"
+                        android:gravity="right"
+                        android:paddingLeft="10dp"
+                        android:textSize="15sp" />
+            </TableRow>
+<!--
+            <TableRow android:id="@+id/tbl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Adresa:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:paddingLeft="15dp"
+                        android:textSize="15sp"/>
+
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:textSize="15sp" />
+            </TableRow> -->
+
+            <TableRow android:id="@+id/tbl4">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Cena:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/priceDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl13">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Poznámka k ceně:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/priceNote"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl5">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Měsíční poplatky:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/monthPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl6">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Kauce:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/priceDepos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl7">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Provize realitní kanceláře:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/priceCommis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl8">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Výměra:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/acreag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl9">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Vybavený:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/furnis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl10">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="K nastěhování:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/availDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl11">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Pronájem přidán:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/publishDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow android:id="@+id/tbl12">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:gravity="left"
+                        android:text="Další vybavení:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <TextView
+                        android:id="@+id/conveniences"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:paddingLeft="15dp"
+                        android:text="null"
+                        android:textSize="15sp" />
+            </TableRow>
+        </TableLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
+
+

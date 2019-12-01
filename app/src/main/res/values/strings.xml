@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Berbyt</string>
+    <string name="rental_text">Inzeráty</string>
+    <string name="logo">logo</string>
+
+    <!-- title -->
+    <string name="title_activity_profile">Profil</string>
+    <string name="title_activity_login">Přihlášení</string>
+    <string name="title_activity_create">Registrace</string>
+    <string name="title_activity_rental">Pronájmy</string>
+
+    <!-- Navigation -->
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_user">Nejste právě</string>
+    <string name="nav_header_email">přihlášen.</string>
+
+    <!--left menu-->
+    <string name="user">Profil</string>
+    <string name="like">Oblíbené inzeráty</string>
+    <string name="dog">Hlídací pes</string>
+    <string name="moreover">Ostatní</string>
+
+    <!--right menu-->
+    <string name="action_settings">Nastavení</string>
+    <string name="action_search">Vyhledat</string>
+    <string name="contact">Kontakt</string>
+    <string name="logout">Odhlásit se</string>
+
+    <!-- button -->
+    <string name="action_register">Vytvořit účet</string>
+    <string name="action_signIn">Přihlásit se</string>
+    <string name="search">Vyhledat nemovitost</string>
+    <string name="forgot">Obnovení hesla?</string>
+
+    <!-- form -->
+    <string name="last_name">Příjmení</string>
+    <string name="name">Jméno Příjmení</string>
+    <string name="nameProf">Jméno</string>
+    <string name="textEmail">E-mail</string>
+    <string name="textPassword">Heslo</string>
+
+    <!-- facebook -->
+    <string name="facebook_app_id">406760223330268</string>
+    <string name="fb_login_protocol_scheme">fb406760223330268</string>
+
+    <!-- search layout -->
+    <string name="title_search_profile">Vyhledávání</string>
+    <string name="type">Typ:</string>
+    <string name="price">Cena (Kč):</string>
+    <string name="range">Rozloha (m2):</string>
+    <string name="locality">Výběr lokality:</string>
+    <string name="furnished">Vybavený:</string>
+    <string name="oldFeed">Stáři inzerátu:</string>
+    <string name="all">Bez omezení</string>
+    <string name="day">Den</string>
+    <string name="sevenDays">Posledních 7 dní</string>
+    <string name="month">Posledních 30 dní</string>
+    <string name="notFoundFeed">Nebyl nalezen žádný inzerát dle Vašich preferencí.</string>
+    <string name="ok">Potvrdit</string>
+    <string name="somethingMore">Něco navíc:</string>
+    <string name="filter">Řadit od:</string>
+    <string name="filterPrice">Nejlevnější</string>
+    <string name="filterDate">Nejnovější</string>
+
+    <!-- profile layout -->
+    <string name="action_edit">Upravit</string>
+    <string name="action_forgot">Obnovit heslo</string>
+    <string name="txtForgotPass">E-mail, ke kterému jste zapomněli heslo:</string>
+
+    <!-- map layout -->
+    <string name="title_map_activity">Mapa inzerátů</string>
+    <string name="logIn">Přihlásit se</string>
+
+    <!-- detail feed layout -->
+    <string name="notFoundFavFeed">Nebyl nalezen žádný oblíbený inzerát</string>
+    <string name="notExistFeed">Tento inzerát již neexistuje.</string>
+    <string name="txtNote">Sem přidejte svou poznámku:</string>
+    <string name="textNote">Poznámka</string>
+    <string name="action_save">Uložit</string>
+    <string name="adress">Na ostrůvku 222/22</string>
+    <string name="adress2">Praha 4, 140 00</string>
+    <string name="berbyt">Berbyt s.r.o.</string>
+    <string name="berbytemail">info@berbyt.cz</string>
+
+
+</resources>

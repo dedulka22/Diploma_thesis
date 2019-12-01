@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.teamtreehouse.berbyt"
+        android:versionCode="1"
+        android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+            android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:icon="@mipmap/logo_berbyt"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".activity.ContactActivity"
+                android:label="Kontakt" />
+        <activity
+                android:name=".activity.EditProfileActivity"
+                android:label="Upravit profil" />
+        <activity
+                android:name=".activity.CreateNoteActivity"
+                android:label="Vytvořit poznámku" />
+        <activity
+                android:name=".activity.FavouriteFeedsActivity"
+                android:label="Oblíbené inzeráty" />
+        <activity
+                android:name=".activity.DetailFeedActivity"
+                android:label="Detail inzerátu" />
+        <activity
+                android:name=".activity.LocalityActivity"
+                android:label="Lokalita" />
+        <activity
+                android:name=".activity.ProfileActivity"
+                android:label="@string/title_activity_profile"
+                android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+                android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+                android:value="true" />
+
+        <activity
+                android:name=".activity.LoginActivity"
+                android:label="@string/title_activity_login" />
+        <activity
+                android:name=".activity.CreateAccountActivity"
+                android:label="@string/title_activity_create" />
+        <activity
+                android:name=".activity.RentalActivity"
+                android:label="@string/title_activity_rental" />
+        <activity
+                android:name=".activity.ForgotPasswordActivity"
+                android:label="Obnovení hesla" />
+        <!--
+                <meta-data
+                        android:name="com.facebook.sdk.ApplicationId"
+                        android:value="@string/facebook_app_id" />
+
+                <activity
+                        android:name="com.facebook.FacebookActivity"
+                        android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                        android:label="@string/app_name" />
+                <activity
+                        android:name="com.facebook.CustomTabActivity"
+                        android:exported="true">
+                    <intent-filter>
+                        <action android:name="android.intent.action.VIEW" />
+
+                        <category android:name="android.intent.category.DEFAULT" />
+                        <category android:name="android.intent.category.BROWSABLE" />
+
+                        <data android:scheme="@string/fb_login_protocol_scheme" />
+                    </intent-filter>
+                </activity>
+        -->
+        <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/facebook_app_id" />
+
+        <activity
+                android:name="com.facebook.FacebookActivity"
+                android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+                android:label="@string/app_name" />
+        <activity
+                android:name="com.facebook.CustomTabActivity"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.SearchActivity"
+                android:label="@string/title_search_profile">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".activity.MapActivity"
+                android:label="@string/title_map_activity" />
+
+        <meta-data
+                android:name="com.here.android.maps.appid"
+                android:value="oraGo7BaqlnwP0C2yMuq" />
+        <meta-data
+                android:name="com.here.android.maps.apptoken"
+                android:value="MKx0YwJurrLVOqzc4xmnCQ" />
+        <meta-data
+                android:name="com.here.android.maps.license.key"
+                android:value="PeR96CsM7gOo0MXN9k1q7yWMZOk8rD4eW+BFWrfL0kReDtRENyNE73aCcpqxVkqueU1heu0PwbGUyWVAHUqf+xGRhmDvjtVTsGWT/jaE7sYZ8B8q812HHir8NwXkIFYbEXKzb/S3qMM0Aiq7P2zp7X27L3J8ked12zjSCuZVc/r1SBjGVjdabgmZcRkPuPoEdZgdb9BsdMovZR/FysP0d+z/dpbknNIK4ore8JxLjojSMyLo3VOgS3pkIHO7QPS8Nl5x29eUMxK3LDQFS9XC6ntv1m+sm4o7FRJs96eo6eg/v1i6L0M8ivYIfk8egdn7RdE4LBaz13eLZzYbRntI3WTc5mfwHnOj4JnmKcB5XWrZl7mkja6y3SLY9hU8AWClJnJx/bK7Am22ON6sbk5lgWOQH8fU5MfVu8bSdlfR03oYShl365aQogsNDJh28AbfDX7/UAYaQIrVWFeXzj8a5TpUAW5AvHmgN4CxnPfCuNDaV4ahYKX6Ws2UXr82qJQi8/ImxDE/VCm2LxDuwIqv71gQbIM8ze3FtiXj8f/M4qV6CKe7EBdBZAvGasN4Pbs0FFQHSP97lbrUv5nFaXmoAU/E7ahZZVsehXhEQclc05GOS9QWtKfW/JL/Gs/1h4+YUi22jbxQaBUyVX82s9KS5H7sdeV9b9r4sWo5JXVJho4=" />
+
+        <service
+                android:name="com.here.android.mpa.service.MapService"
+                android:exported="true"
+                android:label="HereMapService"
+                android:process="global.Here.Map.Service.v3">
+            <intent-filter>
+                <action android:name="com.here.android.mpa.service.MapService.v3" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
